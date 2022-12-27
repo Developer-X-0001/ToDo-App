@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(210deg, #2f25bd, #ae4aff 80%);
+}
+h2{
+    text-align: center;
+    font-size: 48px;
+    color: #7425bd;
+    text-shadow: -1px -1px 0px #a086ff, 1px 1px 0px #bf81f1;
+}
+.title {
+    height: 150px;
+    width: 380px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    opacity: 70%;
+    margin-bottom: 10px;
+    background: linear-gradient(60deg, #847bff, #d67eff 40%);
+}
+.container {
+    height: 500px;
+    width: 380px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    padding: 10px;
+    overflow-y: auto;
+    opacity: 70%;
+    background: linear-gradient(60deg, #847bff, #dc92ff 80%);
+    scrollbar-width: thin;
+}
+.container::-webkit-scrollbar-track-piece {
+    width: 10px;
+    border-radius: 10px;
+    background: rebeccapurple;
+}
+.container::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+    background: linear-gradient(60deg, #a842d8, #5e2bb1 80%);
+}
+.container::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(60deg, #bd77ff, #a077ff 80%);
+}
+p {
+    text-align: center;
+    padding: 5px;
+    color: #6e268f;
+}
+#input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(210deg, #211a86, #9137bb 80%);
+    opacity: 70%;
+    color: #ffffff;
+    padding: 0 10px;
+    margin: 15px 0;
+    transition: opacity 0.5s;
+}
+#input:hover {
+    opacity: 100%;
+}
+:focus::-webkit-input-placeholder {
+    opacity: 0%;
+    transition: opacity 0.35s ease;
+}
+:not(:focus)::-webkit-input-placeholder {
+    opacity: 100%;
+    transition: opacity 0.35s ease;
+}
+#input::placeholder {
+    color: #bbbbbb;
+}
+ul li {
+    list-style-type: none;
+    background: #dddddd;
+    color: #333333;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: linear all 250ms;
+}
+ul li:hover {
+    background: #ffffff;
+}
+footer {
+    text-transform: none;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+footer a:hover {
+    font-size: 30px;
+    color: #7700ff;
+}
+.fa-heart {
+    color: rgb(255, 0, 85);
+}
